@@ -20,7 +20,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./img/imagen3.jpg');    
+    background-image: url('../img/imagen.avif');    
     background-size: cover;     
     background-position: center; 
     opacity: 0.80; 
@@ -33,19 +33,18 @@ body {
     z-index: 1;
 }
 .title{
-    width: 300px;
-    font-size: 30px;
+    width: 300px;         
     font-weight: 20;
     position: absolute;
-    top: 25%;
-    left: 56%;
-    transform: translate(-50%, -50%);
+    top: 25%;   
+    left: 56%;   
+    transform: translate(-50%, -50%);     
     color: rgb(255, 255, 255);
-}
-
+}    
+       
 .login{
     border: 1px solid #ffffff;
-    border-radius: 1%;
+    border-radius: 1%;   
     padding: 60px;
     height: 300px;
     width: 300px;
