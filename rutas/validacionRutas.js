@@ -21,10 +21,11 @@ validacionRutas.post('/validar', function(req, res) {
                 connection.query(registrar, function(error) {
                     if (error) {
                         console.error(error);
-                        res.status(500).send('Error al guardar los datos');
+                        res.status(500).send({ error: 'Este correo ya existe.', backLink: '/' });
                     } else {
                         res.status(201).send('Datos almacenados correctamente.');
                     }
+                    
                 });
             }
         }

@@ -7,22 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>      
 <body>
-
-    <img src="/img/imagen.avif" alt="Descripción de la imagen" id="mi-imagen">
-
     <h1 class="title">Registro</h1>
 
     <form class="login" action="/validar" method="post">
- 
-        Correo:
+        <label for="correo">Correo:</label>
         <input class="correo" type="email" name="correo" id="correo" required><br><br>
 
-        Contraseña:   
+        <label for="contraseña">Contraseña:</label>   
         <input class="contraseña" type="password" name="contraseña" id="contraseña" required><br><br>
 
-        <input class="boton" type="submit" value="Resgistrar">
-
+        <input class="boton" type="submit" value="Registrar">
     </form>
 
+    <div id="error-message"></div>
+
+    <script src="loginValidation.js"></script>
 </body>
 </html>
