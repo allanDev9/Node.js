@@ -19,10 +19,12 @@
     
           if (data.error) {
             errorMessage.innerHTML = `<p>${data.error}</p>`;
+            errorMessage.style.fontSize = '20px';
             const backLink = document.createElement('a');
             backLink.textContent = 'Reintentar';
             backLink.href = '#'; 
-            backLink.style.color= 'red';
+            backLink.style.color= 'white';
+            backLink.style.fontSize= '20px';
             backLink.addEventListener('click', () => {
                 window.location.reload(); 
             });
