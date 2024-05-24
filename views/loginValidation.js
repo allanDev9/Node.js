@@ -23,7 +23,7 @@
             const backLink = document.createElement('a');
             backLink.textContent = 'Reintentar';
             backLink.href = '#'; 
-            backLink.style.color= 'white';
+            backLink.style.color= 'blue';
             backLink.style.fontSize= '20px';
             backLink.addEventListener('click', () => {
                 window.location.reload(); 

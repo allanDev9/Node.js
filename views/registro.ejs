@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>      
 <body>
+    <div class="direccion-email">
+        <p>allanpenaguerra2003@gmail.com<p>
+    </div>
+    <div>
+        <img class="img-perfil" src="img/logotipo.png">
+    </div>
+    <div class="nombre-perfil">
+        <h1 class="name-server">Server</h1>
+        <h1 class="name-hub">hub</h1>
+    </div>
+    <div>
+        <img class="imagen-de-fondo" src="img/imagen.jpg">
+    </div>
+    <div class="barra-de-menu">
+        <div class="contenedor-enlaces">
+        <a href="http://127.0.0.1:3001/views/Contacto.ejs" target="_blank">Contacto</a>
+        <a href="#" target="_blank">Servicio</a>
+        <a href="#" target="_blank">Ayuda</a>
+    </div>
+    </div>
     <h1 class="title">Registro</h1>
-    <img class="imagen-de-fondo" src="img/imagen.jpg" >
+    
     <form class="login" action="/validar" method="post">
-        <label for="correo">Correo:</label>
-        <input class="correo" type="email" name="correo" id="correo" required><br><br>
+        <label  class="Correo" for="correo">Correo:</label>
+        <input class="input-correo" type="email" name="correo" id="correo" required><br><br>
 
         <label for="contraseña">Contraseña:</label>   
-        <input class="contraseña" type="password" name="contraseña" id="contraseña" required><br><br>
+        <input class="input-contraseña" type="password" name="contraseña" id="contraseña" required><br><br>
 
         <input class="boton" type="submit" value="Registrar">
     </form>
@@ -22,5 +42,6 @@
     <div id="error-message"></div>
 
     <script src="loginValidation.js"></script>
+    <script src="BlockNum.js"></script>
 </body>
 </html>
